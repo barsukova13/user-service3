@@ -1,5 +1,6 @@
 
 package org.example.usercrud.service;
+
 import org.example.usercrud.dao.UserDao;
 import org.example.usercrud.model.User;
 import org.apache.logging.log4j.LogManager;
@@ -49,6 +50,7 @@ public class UserServiceImpl implements UserService {
     }
 
     private void validateUser(User user) {
+
         if (user.getName() == null || user.getName().trim().isEmpty()) {
             throw new IllegalArgumentException("Name cannot be empty");
         }
