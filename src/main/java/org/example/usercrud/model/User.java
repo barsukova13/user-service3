@@ -34,6 +34,9 @@ public class User {
         this.createdAt = LocalDateTime.now();
     }
 
+    public User(long l, String johnDoe, String mail, int i) {
+    }
+
 
     public Long getId() {
         return id;
